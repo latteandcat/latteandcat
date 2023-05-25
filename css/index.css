@@ -28,11 +28,16 @@ body {
 
 a {
   text-decoration: none;
+  color: #0f0d56;
 }
 
 p {
   margin: 0;
   padding: 0;
+}
+
+h1, h2, h3 {
+  cursor: default;
 }
 
 /* main */
@@ -49,23 +54,16 @@ main .icon-list {
   margin: 0 auto;
 }
 
-main .icon-list .icon-item {
+main .icon-list .icon-item a{
+  display: inline-block;
   border-bottom: 2px solid transparent;
 }
 
-main .icon-list .icon-item:hover {
+main .icon-list .icon-item:hover a{
+  display: inline-block;
+  color: #0035ff;
   border-bottom: 2px solid #0035ff;
 }
-
-main .icon-list .icon-item a{
-  color: #0f0d56;
-}
-
-main .icon-list .icon-item a:hover{
-  color: #0035ff;
-}
-
-
 
 main .icon-list .icon-item .iconfont{
   font-size: 20px;
