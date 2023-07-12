@@ -1,50 +1,3 @@
-@font-face {
-  font-family: "JetBrainsMono";
-  src: url(../assets/font/JetBrainsMono-Regular.ttf);
-  font-style: normal;
-  font-weight: normal;
-}
-
-html, body {
-  height: 100%;
-  min-width: 346px;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #7F7FD5;
-  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-  background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
-  font-size: 16px;
-  font-family: JetBrainsMono;
-}
-
-a {
-  text-decoration: none;
-  color: #0f0d56;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-li:last-child {
-  margin-bottom: 0;
-}
-
 /* main.home */
 
 main.home {
@@ -57,21 +10,22 @@ main.home {
 main.home .icon-list {
   display: flex;
   justify-content: space-between;
-  width: 300px;
-  margin: 0 auto;
+  /* width: 300px; */
+  width: 250px;
+  margin: 50px auto;
   -webkit-user-select: none;
   user-select: none;
 }
 
 main.home .icon-list .icon-item a{
   display: inline-block;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid rgba(0, 53, 255, 0);
+  transition: all .3s ease-in-out;
 }
 
 main.home .icon-list .icon-item:hover a{
-  display: inline-block;
   color: #0035ff;
-  border-bottom: 2px solid #0035ff;
+  border-color: rgba(0, 53, 255, 1);
 }
 
 main.home .icon-list .icon-item .iconfont{
@@ -135,11 +89,12 @@ main.about .box, section.info-list .info-item{
   color: #0035ff;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 5px;
-  border: 2px solid transparent;
+  border: 2px solid rgba(0, 53, 255, 0);
+  transition: all .3s ease-in-out;
 }
 
 main.about .box:hover, section.info-list .info-item:hover{
-  border: 2px solid #0035ff;
+  border-color: rgba(0, 53, 255, 1);
 }
 
 main.about .box .title, section.info-list .info-item .title{
@@ -152,23 +107,12 @@ section.info-list .info-item:last-child {
 
 /* footer */
 
-footer.home {
-  height: 35px;
-  width: 100%;
-  min-width: 346px;
-  position: fixed;
-  bottom: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-footer.about {
-  height: 35px;
+footer {
   width: 100%;
   min-width: 346px;
   font-weight: bold;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 
 footer a {
