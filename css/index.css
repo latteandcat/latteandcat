@@ -60,6 +60,7 @@ main.about {
 main.about .box img {
   width: 150px;
   height: 150px;
+  border-radius: 50%;
 }
 
 main.about .left {
@@ -67,7 +68,7 @@ main.about .left {
 }
 
 main.about .left h2{
-  margin-top: 0;
+  margin-top: 25px;
   margin-bottom: 5px;
 }
 
